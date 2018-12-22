@@ -43,7 +43,7 @@ class MenuController extends Controller
 
     public function store(Request $request)
     {
-        return $request->all();
+       // return $request->all();
         $data =  new Menu();
         $data->fill($request->all());
         if($data->save()){
