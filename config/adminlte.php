@@ -116,8 +116,13 @@ return [
         ],
         [
             'text'        => 'Menu',
-            'url'         => 'ad/menu',
+            'url'         => 'menu',
             'icon'        => 'file'
+        ],
+        [
+            'text'        => 'Slider',
+            'url'         => 'slider',
+            'icon'        => 'image'
         ]
     ],
 

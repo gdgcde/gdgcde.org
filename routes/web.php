@@ -20,5 +20,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/menu', 'MenuController');
+Route::resource('/slider', 'SliderController');
+
+
+
+
+
+//API
+Route::get('/menus', 'MenuController@api_menus');
+Route::get('/sliders', 'SliderController@api_slider');
 
 

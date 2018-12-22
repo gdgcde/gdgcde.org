@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Menu;
+use App\Slider;
+use Faker\Provider\Image;
 use Illuminate\Http\Request;
 
-class MenuController extends Controller
+class SliderController extends Controller
 {
 
 //
@@ -14,17 +15,17 @@ class MenuController extends Controller
 //        $this->middleware('auth');
 //    }
 
-    private $route = 'menu';
-    private $module = 'Menu';
+    private $route = 'slider';
+    private $module = 'Slider';
     private $pag = 25;
-    private $folder = 'menu';
+    private $folder = 'slider';
 
     public function index(Request $request)
     {
 
 
         $title = $this->module;
-        $data = Menu::orderBy('name')->paginate($this->pag);
+        $data = Slider::orderBy('name')->paginate($this->pag);
         $ruta = $this->route;
 
         return view($this->folder.'.index', compact('title', 'data', 'ruta', 'request'));
@@ -43,9 +44,13 @@ class MenuController extends Controller
 
     public function store(Request $request)
     {
-        return $request->all();
-        $data =  new Menu();
-        $data->fill($request->all());
+
+
+        $data =  new Slider();
+        $rescatado = $request->all();
+        $rescatado['image'] = $this->upload_image($request->image, 'slider');
+        $rescatado['image_mobile'] = $this->upload_image($request->image_mobile, 'slider_mobile');
+        $data->fill($rescatado);
         if($data->save()){
             session()->flash('success', 'Se ha creado correctamente');
         }else {
@@ -60,7 +65,7 @@ class MenuController extends Controller
     {
         $title = $this->module .' Eliminar';
         $ruta = $this->route;
-        $data = Menu::Find($id);
+        $data = Slider::Find($id);
         return view($this->folder.".show", compact('data', 'title', 'modulo', 'ruta'));
     }
 
@@ -68,7 +73,7 @@ class MenuController extends Controller
     public function edit($id)
     {
         $title = $this->module;
-        $data = Menu::Find($id);
+        $data = Slider::Find($id);
         $ruta = $this->route;
 
         return view($this->folder.'.edit', compact('title', 'data', 'ruta', 'request'));
@@ -77,9 +82,17 @@ class MenuController extends Controller
 
     public function update(Request $request, $id)
     {
-        $data = Menu::FindOrFail($id);
+        $data = Slider::FindOrFail($id);
+        $rescatado = $request->all();
+        if($request->image != ''){
+            $rescatado['image'] = $this->upload_image($request->image, 'slider');
+        }
+        if($request->image != ''){
+            $rescatado['image_mobile'] = $this->upload_image($request->image_mobile, 'slider_mobile');
+        }
 
-        $data->fill($request->all());
+
+        $data->fill($rescatado);
 
         if($data->save()){
 
@@ -94,7 +107,7 @@ class MenuController extends Controller
 
     public function destroy($id)
     {
-        $data = Menu::Find($id);
+        $data = Slider::Find($id);
         $data->delete();
         session()->flash('success', 'Se ha eliminado correctamente');
         return redirect($this->route);
@@ -102,8 +115,37 @@ class MenuController extends Controller
 
 
 
-    public function api_menus(){
+    public function api_slider(){
 
-        return Menu::where('active', 1)->get();
+        return Slider::where('active', 1)->get();
     }
+
+
+
+    function upload_image($file=array(),  $folder){
+
+
+        $file_type = $file->getClientOriginalExtension();
+        $folder = $folder;
+        $destinationPath = public_path() . '/uploads/'.$folder;
+        $destinationPathThumb = public_path() . '/uploads/'.$folder.'thumb';
+        $filename = time().'_'.time() . '.' . $file->getClientOriginalExtension();
+        $url = '/uploads/'.$folder.'/'.$filename;
+
+        if ($file->move($destinationPath.'/' , $filename)) {
+
+            return $url;
+
+        }
+
+
+        return '';
+
+    }
+
+
+
+
+
+
 }
