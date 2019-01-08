@@ -1,0 +1,50 @@
+/* Add your styles here */
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    
+    "section"
+    "section2"
+    "aside-1"
+    "footer";
+}
+
+@media (min-width: 700px) {
+  .container {
+    grid-template-areas:
+      "section section aside-1"
+      "section2 section2 aside-1"
+      "footer footer footer";
+  }
+}
+
+/* All Grid Items */
+.container > * {
+  
+}
+
+header {
+  grid-area: header;
+}
+
+aside:nth-of-type(1) {
+  grid-area: aside-1;
+}
+
+section {
+  grid-area: section;
+}
+
+section {
+  grid-area: section2;
+}
+
+aside:nth-of-type(1) {
+  grid-area: aside-1;
+}
+
+footer {
+  grid-area: footer;
+}
