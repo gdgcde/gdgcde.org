@@ -47,7 +47,7 @@
 
 <script src="public/js/services/menuService.js"></script>
 
-
+<script src="public/js/services/sliderService.js"></script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -68,9 +68,9 @@
 
 
 <script src="public/js/config/uiRouteConfig.js"></script>
-
+<!-- ng-controller="menuController" -->
   </head>
-  <body ng-controller="menuController">
+  <body >
     <!-- #### Navbar #### -->
     <div class="navbar-fixed">
       <nav class="grey lighten-5">
@@ -97,14 +97,41 @@
     </div>
     <!-- #### Navbar END #### -->
 
+    <!-- #### Mobile Navbar #### -->
+    <div>
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background"><img src="" /></div>
+            <a href="#user"><img class="circle" src="public/images/iconogdg.png"/></a>
+            <a href="#name" class="grey-text text-darken-1"
+              ><span class="name grey-text text-darken-1">GDG CDE</span></a
+            >
+            <a href="#email" class="grey-text text-darken-1"
+              ><span class="email grey-text text-darken-1">gdgcde@gmail.com</span></a
+            >
+          </div>
+        </li>
+        <li><a ui-sref='inicio' class="grey-text text-darken-1">Inicio</a></li>
+        <li><a ui-sref='integrante' class="grey-text text-darken-1">Miembros</a></li>
+        <li><a  href="/evento" class="grey-text text-darken-1">Eventos</a></li>
+        <li><a class="grey-text text-darken-1">Sobre GDG</a></li>
+      </ul>
+    </div>
+    <!-- #### Mobile Navbar END #### -->
+
+
+
+
+
     <div class="row">
 <section class="col s12 l12">
 
-<div class="">
-<div class="" ui-view="principal">
+
+<div ui-view="principal">
    
 </div>
-</div>
+
 
 
 </section>
@@ -140,29 +167,11 @@
 </div>
 <!-- fin row -->
 
+  
 
-    <!-- #### Mobile Navbar #### -->
-    <div>
-      <ul id="slide-out" class="sidenav">
-        <li>
-          <div class="user-view">
-            <div class="background"><img src="" /></div>
-            <a href="#user"><img class="circle" src="public/images/iconogdg.png"/></a>
-            <a href="#name" class="grey-text text-darken-1"
-              ><span class="name grey-text text-darken-1">GDG CDE</span></a
-            >
-            <a href="#email" class="grey-text text-darken-1"
-              ><span class="email grey-text text-darken-1">gdgcde@gmail.com</span></a
-            >
-          </div>
-        </li>
-        <li><a ui-sref='inicio' class="grey-text text-darken-1">Inicio</a></li>
-        <li><a ui-sref='integrante' class="grey-text text-darken-1">Miembros</a></li>
-        <li><a  href="/evento" class="grey-text text-darken-1">Eventos</a></li>
-        <li><a class="grey-text text-darken-1">Sobre GDG</a></li>
-      </ul>
-    </div>
-    <!-- #### Mobile Navbar END #### -->
+
+
+
 
      <!-- JS JQuery -->
     <script
