@@ -5,19 +5,31 @@ console.log('sliderController');
 
 var cargarSliders = function cargarSliders() {
 
-
+	//$scope.bandera=false;
 
 	sliderAPI.getSliders().then(function (response){
 
 
-		console.log(response);
-		$scope.sliders = response.data;
+		var vector=[];
 		
-		var nombre=$scope.sliders[0].name;
-		console.log("status:" + response.status);
+		
+		angular.forEach(response.data, function(slider) {
+		
+			  slider.image="http://localhost:8000"+slider.image;
+			  
+			 
 
-console.log("Datos:" +nombre );
+			vector.push(slider);
 
+			}); 
+		
+		
+		
+		
+		$scope.sliders = vector;
+		
+		
+		console.log("Sliders Controller in",$scope.sliders);
 
 	}).catch(function(response) {
 	  console.error('Error occurred:', response.status, response.data);
@@ -29,29 +41,11 @@ console.log("Datos:" +nombre );
 };
 
 
+
+
+
 cargarSliders();
 
-
-
-/*$('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true,
-    autoplay: true
-  });
-
-
-
-
-autoplay()   
-function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 6000);
-}
-
-$('.materialboxed').materialbox();*/
-
-
-$('.slider').slider();
 
 
 });
