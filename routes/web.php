@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
 });
 
 Auth::routes();
@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/menu', 'MenuController');
 Route::resource('/slider', 'SliderController');
 
-
+Route::post('registro', 'SiteController@registro')->name('registro');
 
 
 
