@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/menu', 'MenuController');
 Route::resource('/slider', 'SliderController');
+Route::resource('/registrados', 'RegistradosController');
 
 Route::post('registro', 'SiteController@registro')->name('registro');
 

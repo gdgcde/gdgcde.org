@@ -2,30 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\Slider;
-use Faker\Provider\Image;
+use App\Inscripciones;
 use Illuminate\Http\Request;
 
-class SliderController extends Controller
+class RegistradosController extends Controller
 {
-
-
     public function __construct()
     {
         $this->middleware('auth');
     }
 
     private $route = 'slider';
-    private $module = 'Slider';
+    private $module = 'Registrados';
     private $pag = 25;
-    private $folder = 'slider';
+    private $folder = 'registrados';
 
     public function index(Request $request)
     {
 
 
         $title = $this->module;
-        $data = Slider::orderBy('name')->paginate($this->pag);
+        $data = Inscripciones::orderBy('name')->paginate($this->pag);
         $ruta = $this->route;
 
         return view($this->folder.'.index', compact('title', 'data', 'ruta', 'request'));
@@ -46,10 +43,8 @@ class SliderController extends Controller
     {
 
 
-        $data =  new Slider();
+        $data =  new Inscripciones();
         $rescatado = $request->all();
-        $rescatado['image'] = $this->upload_image($request->image, 'slider');
-        $rescatado['image_mobile'] = $this->upload_image($request->image_mobile, 'slider_mobile');
         $data->fill($rescatado);
         if($data->save()){
             session()->flash('success', 'Se ha creado correctamente');
@@ -142,9 +137,6 @@ class SliderController extends Controller
         return '';
 
     }
-
-
-
 
 
 
