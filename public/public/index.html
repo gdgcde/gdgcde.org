@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html ng-app="menu">
+
+<base href="/">
+
+
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GDG Cde</title>
+
+
+    <script type="text/javascript" src="public/lib/js/angular.js"></script>
+    <script type="text/javascript" src="public/lib/js/angular-ui-router.min.js"></script>
+
+    <script src="public/js/app.js"></script>
+
+ <link href="public/lib/css/toastr/toastr.css" rel="stylesheet">
+
+
+
+<script type="text/javascript" src="public/lib/css/toastr/toastr.js"></script>
+
+
+
+<script src="public/js/interceptors/tokenInterceptor.js"></script>
+
+
+<script src="public/js/config/interceptorsConfig.js"></script>
+
+
+<script src="public/js/config/configValue.js"></script>
+
+<script src="public/js/controllers/auspiciantesController.js"></script>
+
+<script src="public/js/controllers/principalController.js"></script>
+
+<script src="public/js/controllers/eventosController.js"></script>
+
+<script src="public/js/controllers/integranteController.js"></script>
+
+<script src="public/js/controllers/menuController.js"></script>
+
+<script src="public/js/controllers/sliderController.js"></script>
+
+
+<script src="public/js/services/menuService.js"></script>
+
+<script src="public/js/services/sliderService.js"></script>
+
+<script src="public/js/directive/sliderDirective.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+
+  <link href="public/lib/css/materialize/css/iconos/index.css" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      href="public/lib/css/materialize/css/materialize.min.css"/>
+    <link rel="stylesheet" href="public/css/main.css" />
+    <!-- <link rel="stylesheet" href="public/css/normalize.css" /> -->
+
+    <!-- <link rel="stylesheet" href="public/css/menu.css" /> -->
+
+
+
+
+<script src="public/js/config/uiRouteConfig.js"></script>
+<!-- ng-controller="menuController" -->
+  </head>
+  <body ng-controller="menuController">
+    <!-- #### Navbar #### -->
+    <div class="navbar-fixed">
+      <nav class="grey lighten-5">
+        <div class="nav-wrapper">
+          <a
+            href="#"
+            id="header-nav-logo"
+            class="brand-logo grey-text text-darken-1"
+            >GDG CDE</a
+          >
+          <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+            ><i class="material-icons grey-text text-darken-1">menu</i></a> -->
+
+
+  <a href="#" data-target="slide-out" class="sidenav-trigger grey-text text-darken-1"><i class="material-icons">menu</i></a>
+
+
+          <ul class="right hide-on-med-and-down" ng-repeat="menu in menus">
+          <li><a ui-sref='{{menu.name}}' class="grey-text text-darken-1">{{menu.name}}</a></li>
+           
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- #### Navbar END #### -->
+
+    <!-- #### Mobile Navbar #### -->
+    <div>
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background"><img src="" /></div>
+            <a href="#user"><img class="circle" src="public/images/iconogdg.png"/></a>
+            <a href="#name" class="grey-text text-darken-1"
+              ><span class="name grey-text text-darken-1">GDG CDE</span></a
+            >
+            <a href="#email" class="grey-text text-darken-1"
+              ><span class="email grey-text text-darken-1">gdgcde@gmail.com</span></a
+            >
+          </div>
+        </li>
+        <li><a ui-sref='inicio' class="grey-text text-darken-1">Inicio</a></li>
+        <li><a ui-sref='integrante' class="grey-text text-darken-1">Miembros</a></li>
+        <li><a  href="/evento" class="grey-text text-darken-1">Eventos</a></li>
+        <li><a class="grey-text text-darken-1">Sobre GDG</a></li>
+      </ul>
+    </div>
+    <!-- #### Mobile Navbar END #### -->
+
+
+
+
+
+    <div class="row">
+<section class="col s12 l12">
+
+
+<div ui-view="principal">
+   
+</div>
+
+
+
+</section>
+
+
+<div class="col s3 l3"></div>
+
+ <section class="col s9 l9">
+<div ui-view="info">
+  
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+ <aside class="col s12 l12">
+
+
+<div ui-view="principal2">
+  
+</div>
+</aside> 
+
+
+
+<div ng-include="'public/views/templates/footer.html'" class="z-depth-5"></div>
+
+
+</div>
+<!-- fin row -->
+
+  
+
+
+
+
+
+     <!-- JS JQuery -->
+    <script
+      src="public/lib/js/jquery.min.js"
+    ></script>
+
+
+    <!-- JS materialize -->
+    <script src="public/lib/css/materialize/js/materialize.min.js"></script>
+   
+    <!-- JS SideNav -->
+    <script src="public/js/navbar.js"></script>
+
+
+<script type="text/javascript">
+  
+
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+
+
+
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+
+$('.slider').slider();
+
+
+
+  });
+
+$(document).ready(function(){
+    $('.slider').slider();
+  });
+
+
+
+</script>
+
+  </body>
+</html>
