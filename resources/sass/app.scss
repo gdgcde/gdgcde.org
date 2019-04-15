@@ -1,14 +1,13 @@
-
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
 
 // Variables
-@import 'variables';
+@import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+@font-face {
+    font-family: google-sans;
+    src: url(assets/fonts/GoogleSans-Regular.ttf);
+}
+.google-font {
+    font-family: google-sans;
 }

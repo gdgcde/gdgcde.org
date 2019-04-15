@@ -1,13 +1,29 @@
+require("./bootstrap");
+window.Vue = require("vue");
+const Vuetify = () => require("vuetify");
+require("vuetify/dist/vuetify.min.css");
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+// Truncate filter
+Vue.filter("truncate", function(text, length, suffix) {
+    if (text < length) {
+        return text.substring(0, length) + suffix;
+    } else {
+        return text;
+    }
+});
 
-require('./bootstrap');
-
-window.Vue = require('vue');
+Vue.use(Vuetify, {
+    theme: {
+        primary: "#518FF5",
+        secondary: "#424242",
+        accent: "#82B1FF",
+        error: "#FF5252",
+        info: "#2196F3",
+        success: "#4CAF50",
+        warning: "#FFC107"
+    },
+    iconfont: "md"
+});
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,7 +36,10 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component(
+    "example-component",
+    require("./components/ExampleComponent.vue").default
+);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,5 +48,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+    el: "#app"
 });
