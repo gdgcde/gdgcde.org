@@ -31,4 +31,5 @@ Route::post('registro', 'SiteController@registro')->name('registro');
 Route::get('/menus', 'MenuController@api_menus');
 Route::get('/sliders', 'SliderController@api_slider');
 
+Route::view('/welcome', 'welcome');
 
