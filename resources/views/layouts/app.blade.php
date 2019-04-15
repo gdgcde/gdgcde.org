@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>GDG CDE - @yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,15 +18,15 @@
 <body>
     <div id="app" class="py-4">
         <v-app class="white">
-            <Toolbar></Toolbar>
-            <Drawer></Drawer>
+            <toolbar></toolbar>
+            <drawer></drawer>
             <v-content id="home" class="pb-0">
                 <v-slide-y-reverse-transition>
                     @yield('content')
                 </v-slide-y-reverse-transition>
             </v-content>
-            <Footer></Footer>
-            <BottomNav></BottomNav>
+            <g-footer></g-footer>
+            <bottom-nav></bottom-nav>
         </v-app>
     </div>
 </body>

@@ -7,7 +7,7 @@
       <v-layout wrap align-center justify-center row fill-height class="my-0 py-0">
         <v-flex xs12 md10 sm10 lg10 class="py-0 my-0">
           <p class="google-font" style="font-size:130%">
-            Follow Us:
+            Siganos:
             <span v-for="(item,i) in ChapterDetails.socialLinks" :key="i">
               <v-tooltip top>
                 <v-btn flat icon :href="item.link" target="_blank" slot="activator">
@@ -26,7 +26,7 @@
           <v-layout wrap align-start justify-start row class="my-2">
             <v-flex xs12 md3 sm4 lg3 class="py-2">
               <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;">
-                <b>About</b>
+                <b>Acerca</b>
               </p>
               <div v-for="(item,i) in FooterData.AboutSession" :key="i" class="mt-1">
                 <a
@@ -41,7 +41,7 @@
 
             <v-flex xs12 md3 sm4 lg3 class="py-2">
               <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;">
-                <b>Resources</b>
+                <b>Recursos</b>
               </p>
               <div v-for="(item,i) in FooterData.ChapterResourcesSession" :key="i" class="mt-1">
                 <a
@@ -56,7 +56,7 @@
 
             <v-flex xs12 md3 sm4 lg3 class="py-2">
               <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;">
-                <b>Developer Console</b>
+                <b>Consola de desarrollador</b>
               </p>
               <div v-for="(item,i) in FooterData.DevConsole" :key="i" class="mt-1">
                 <a
