@@ -38,7 +38,7 @@ This is a fork of the template: https://github.com/gdg-x/aura
     </details>
 </div>
 
-##Contributors
+## Contributors
 
 <p align="center">
     <a href="https://github.com/mingui"><img src="https://avatars0.githubusercontent.com/u/4925830?s=460&v=4" heigth="50" width="50"></a>
