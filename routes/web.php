@@ -32,7 +32,7 @@ Route::get('/menus', 'MenuController@api_menus');
 Route::get('/sliders', 'SliderController@api_slider');
 
 // GDG AURA ROUTES
-Route::view('/welcome', 'welcome');
+Route::view('/welcome', 'welcome'); // move this route in root route
 Route::view('/acerca', 'about');
 Route::view('/eventos', 'events');
 Route::view('/equipo', 'team');

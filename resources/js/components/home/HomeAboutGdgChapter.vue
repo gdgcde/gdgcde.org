@@ -22,11 +22,11 @@
         >Facebook Page</v-btn>
         <br>
         <br>
-        <router-link
-          to="/about"
+        <a
+          href="/acerca"
           class="google-font"
           style="text-decoration:none;color:white"
-        >See More about {{chapterDetails.ChapterName}}</router-link>
+        >Más acerca de {{chapterDetails.ChapterName}}</a>
       </v-flex>
       <v-flex xs12 md2 lg2 class="hidden-sm-and-down">
         <v-img

@@ -34,7 +34,6 @@ Vue.use(Vuetify, {
 
 const files = require.context("./", true, /\.vue$/i);
 files.keys().map(key => {
-  console.log(key);
   Vue.component(
     key
       .split("/")
