@@ -31,7 +31,9 @@ Route::post('registro', 'SiteController@registro')->name('registro');
 Route::get('/menus', 'MenuController@api_menus');
 Route::get('/sliders', 'SliderController@api_slider');
 
+// GDG AURA ROUTES
 Route::view('/welcome', 'welcome');
 Route::view('/acerca', 'about');
 Route::view('/eventos', 'events');
+Route::view('/equipo', 'team');
 
