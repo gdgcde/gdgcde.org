@@ -33,4 +33,5 @@ Route::get('/sliders', 'SliderController@api_slider');
 
 Route::view('/welcome', 'welcome');
 Route::view('/acerca', 'about');
+Route::view('/eventos', 'events');
 
