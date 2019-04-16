@@ -2,29 +2,26 @@ require("./bootstrap");
 window.Vue = require("vue");
 const Vuetify = () => require("vuetify");
 import store from "./store";
-import "vuetify/dist/vuetify.min.css";
-import "material-design-icons-iconfont/dist/material-design-icons.css";
 
 // Truncate filter
 Vue.filter("truncate", function(text, length, suffix) {
-    if (text < length) {
-        return text.substring(0, length) + suffix;
-    } else {
-        return text;
-    }
+  if (text < length) {
+    return text.substring(0, length) + suffix;
+  } else {
+    return text;
+  }
 });
 
 Vue.use(Vuetify, {
-    theme: {
-        primary: "#518FF5",
-        secondary: "#424242",
-        accent: "#82B1FF",
-        error: "#FF5252",
-        info: "#2196F3",
-        success: "#4CAF50",
-        warning: "#FFC107"
-    },
-    iconfont: "md"
+  theme: {
+    primary: "#518FF5",
+    secondary: "#424242",
+    accent: "#82B1FF",
+    error: "#FF5252",
+    info: "#2196F3",
+    success: "#4CAF50",
+    warning: "#FFC107"
+  }
 });
 
 /**
@@ -37,14 +34,14 @@ Vue.use(Vuetify, {
 
 const files = require.context("./", true, /\.vue$/i);
 files.keys().map(key => {
-    console.log(key);
-    Vue.component(
-        key
-            .split("/")
-            .pop()
-            .split(".")[0],
-        files(key).default
-    );
+  console.log(key);
+  Vue.component(
+    key
+      .split("/")
+      .pop()
+      .split(".")[0],
+    files(key).default
+  );
 });
 
 // Vue.component(
@@ -59,6 +56,6 @@ files.keys().map(key => {
  */
 
 const app = new Vue({
-    store,
-    el: "#app"
+  store,
+  el: "#app"
 });

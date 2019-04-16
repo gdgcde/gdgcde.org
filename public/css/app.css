@@ -1,1 +1,9 @@
-@import url(https://use.fontawesome.com/releases/v5.7.0/css/all.css);@font-face{font-family:google-sans;src:url(/fonts/GoogleSans-Regular.ttf?b5c77a6aed75cdad9489effd0d5ea411)}.google-font{font-family:google-sans}
+@import url(https://use.fontawesome.com/releases/v5.7.0/css/all.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.11/vuetify.min.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css);@font-face {
+  font-family: google-sans;
+  src: url(/fonts/GoogleSans-Regular.ttf?b5c77a6aed75cdad9489effd0d5ea411);
+}
+
+.google-font {
+  font-family: google-sans;
+}
+

@@ -1,13 +1,12 @@
 // Fonts
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
-
-// Variables
-@import "variables";
+@import "https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.11/vuetify.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
 
 @font-face {
-    font-family: google-sans;
-    src: url(assets/fonts/GoogleSans-Regular.ttf);
+  font-family: google-sans;
+  src: url(assets/fonts/GoogleSans-Regular.ttf);
 }
 .google-font {
-    font-family: google-sans;
+  font-family: google-sans;
 }

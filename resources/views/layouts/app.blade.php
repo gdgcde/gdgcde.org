@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
