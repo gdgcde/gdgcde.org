@@ -1,5 +1,7 @@
+const key = require("./meetup");
+
 export const MeetupAPI = {
-  apiKey: "apikey",
+  apiKey: key,
   urlname: "gdgcde"
 };
 
