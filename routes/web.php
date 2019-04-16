@@ -36,4 +36,5 @@ Route::view('/welcome', 'welcome');
 Route::view('/acerca', 'about');
 Route::view('/eventos', 'events');
 Route::view('/equipo', 'team');
+Route::view('/contacto', 'contact');
 
