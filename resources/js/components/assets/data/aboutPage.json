@@ -1,32 +1,29 @@
 {
-    "communityGuideline":[
-        {
-            "name":"Be nice",
-            "des":"We're all part of the same community, so be friendly, welcoming, and generally a nice person. Be someone that other people want to be around."
-        },
-        {
-            "name":"Be respectful and constructive",
-            "des":"Remember to be respectful and constructive with your communication to fellow members. Don't get into flamewars, make personal attacks, vent, or rant unconstructively. Everyone should take responsibility for the community and take the initiative to diffuse tension and stop a negative thread as early as possible."
-        },
-        {
-            "name":"Be collaborative",
-            "des":"Work together! We can learn a lot from each other. Share knowledge, and help each other out."
-        },
-        {
-            "name":"Participate",
-            "des":"Join in on discussions, show up for in-person meetings regularly, offer feedback, and help implement that feedback."
-        },
-        {
-            "name":"Step down considerately",
-            "des":"If you have some form of responsibility in your community, be aware of your own constraints. If you know that a new job or personal situation will limit your time, find someone who can take over for you and transfer the relevant information (contacts, passwords, etc.) for a smooth transition."
-        },
-        {
-            "name":"Basic etiquette for online discussions",
-            "des":"Don’t send messages to a big list that only need to go to one person. Keep off topic conversations to a minimum. Don’t be spammy by advertising or promoting personal projects which are off topic."
-        }
-
-    ],
-    "coc":"When you join our programs, you’re joining a community. And like any growing community, a few ground rules about expected behavior are good for everyone. These guidelines cover both online (e.g. mailing lists, social channels) and offline (e.g. in-person meetups) behavior. Violations of this code of conduct can result in members being removed from the program. Use your best judgement, and if you’d like more clarity or have questions feel free to reach out."
-
-
+  "communityGuideline": [
+    {
+      "name": "Se agradable",
+      "des": "Todos somos parte de la misma comunidad, así que sea amable, acogedor y, en general, una buena persona. Se alguien con quien otras personas quieren estar cerca."
+    },
+    {
+      "name": "Ser respetuoso y constructivo.",
+      "des": "Recuerde ser respetuoso y constructivo con su comunicación a los miembros. No te involucres en discusiones innecesarias, ni hagas ataques personales o opiniones de manera no constructiva. Todos deben responsabilizarse de la comunidad y tomar la iniciativa para difundir la tensión y detener un hilo negativo lo antes posible."
+    },
+    {
+      "name": "Sea colaborativo",
+      "des": "¡Trabajemos juntos! Podemos aprender mucho unos de otros. Comparta el conocimiento y recuerde ayudarse mutuamente."
+    },
+    {
+      "name": "Sea participativo",
+      "des": "Únase a las discusiones, asista a reuniones en persona con regularidad, ofrezca comentarios y ayude a implementar esos comentarios."
+    },
+    {
+      "name": "Reconozca sus limitaciones",
+      "des": "Si tiene alguna responsabilidad en su comunidad, sea consciente de sus propias limitaciones. Si sabe que un nuevo trabajo o situación personal limitará su tiempo, busque a alguien que pueda hacerse cargo de usted y transfiera la información relevante (contactos, contraseñas, etc.) para una transición sin problemas."
+    },
+    {
+      "name": "Reglas en los canales sociales",
+      "des": "No envíe mensajes que solo  va dirigido a una persona a un grupo. Intente mantener las conversaciones fuera de tema al mínimo. No se convierta en correo no deseado mediante publicidad o promoción de proyectos personales que estén fuera de tema."
+    }
+  ],
+  "coc": "Cuando te unes a nuestros programas, te estás uniendo a una comunidad. Y como cualquier comunidad en crecimiento, tenemos algunas reglas básicas sobre el comportamiento esperado. Estas pautas cubren el comportamiento en línea (por ejemplo, listas de correo, canales sociales) y fuera de línea (por ejemplo, reuniones en persona). Las violaciones de este código de conducta pueden hacer que los miembros sean eliminados del programa. Use su mejor criterio y, si desea más claridad o tiene preguntas, no dude en comunicarse."
 }
