@@ -2,18 +2,18 @@
   <v-container class="pa-0 mb-3">
     <v-layout wrap align-center justify-center row fill-height class="mt-0 mb-0">
       <v-flex xs12 md12 lg12 class="pa-2 mb-0">
-        <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Directory of past events</p>
+        <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Eventos pasados.</p>
         <p
           class="google-font mt-0 mb-0"
           style="font-size:110%;color:#616161 "
-        >Events are listed in reverse chronological order by date.</p>
+        >Los eventos a continuación son listados en forma desendente.</p>
         <p class="google-font" style="font-size:110%;color:#616161 ">
-          Here are the recent 10 meetups. To know more about the past meetups
+          Aqui los 10 eventos pasados más recientes. Para saber más sobre eventos pasados
           <a
             :href="chapterDetails.ChapterMeetupLink"
             target="_blank"
             style="text-decoration:none;color:#0277bd"
-          >Click here</a>
+          >Clique aqui</a>
         </p>
       </v-flex>
     </v-layout>
@@ -47,7 +47,7 @@
                     <v-icon color="grey lighten-1">arrow_forward</v-icon>
                   </v-btn>
 
-                  <span>See More about {{item.name}}</span>
+                  <span>Vea más acerca de {{item.name}}</span>
                 </v-tooltip>
               </v-list-tile-action>
             </v-list-tile>

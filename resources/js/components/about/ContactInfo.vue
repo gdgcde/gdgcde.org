@@ -2,7 +2,7 @@
   <v-container class="pa-0 my-0">
     <v-layout wrap align-start justify-start row fill-height class="my-0">
       <v-flex xs12 md8 lg8 class="pa-2 my-0">
-        <p class="google-font" style="font-size:180%;color:#0277bd">Community Guidelines</p>
+        <p class="google-font" style="font-size:180%;color:#0277bd">Codigo de conducta</p>
 
         <v-expansion-panel>
           <v-expansion-panel-content v-for="(item,i) in aboutPage.communityGuideline" :key="i">

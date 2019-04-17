@@ -21,11 +21,11 @@
         </v-img>
       </v-flex>
       <v-flex xs12 sm8 md10 lg10 class="pa-2 py-4 px-3">
-        <p class="google-font mb-0" style="font-size:150%">Women Techmakers program</p>
+        <p class="google-font mb-0" style="font-size:150%">Programa: Women Techmakers</p>
         <p
           class="google-font mt-1"
           style="font-size:120%"
-        >WTM Program Provides visibility, community, and resources for women in technology. Get involved. Sign up to be connected to a global community and receive resources.</p>
+        >WTM Program da visibilidad y recursos a mujeres en el mundo de la tecnologia. Unete para estar conectada a una comunidad global y recibir recursos.</p>
         <v-btn
           :href="ChapterDetails.wtmWebsite"
           target="_blank"
@@ -33,7 +33,7 @@
           color="#4C4A78"
           class="ma-0 google-font"
           style="border-radius:7px;text-transform: capitalize;"
-        >See More About WTM Program</v-btn>
+        >Vea más acerca del WTM</v-btn>
       </v-flex>
     </v-layout>
   </v-container>

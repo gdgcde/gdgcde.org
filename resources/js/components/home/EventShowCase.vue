@@ -2,11 +2,11 @@
   <v-container class="pa-0">
     <v-layout wrap align-center justify-center row fill-height class="mt-5">
       <v-flex xs12 md9 lg9 class="pa-2 text-xs-center">
-        <p class="google-font" style="font-size:170%">Our Events & Meetups</p>
+        <p class="google-font" style="font-size:170%">Nuestros eventos y Meetups</p>
         <p
           class="google-font"
           style="font-size:120%"
-        >At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
+        >Sesiones que van desde lo técnico a lo visionario, celebremos y descubramos lo que las tecnologías pueden lograr: cómo la innovación, el código abierto, y como ML y AI pueden impulsar a las empresas a resolver los grandes problemas que nos impactan a todos.</p>
         <a
           href="/eventos"
           flat
@@ -54,7 +54,7 @@
               target="_blank"
               class="mb-0 ml-0 mt-0 google-font"
               style="border-radius:7px;text-transform: capitalize;"
-            >See More</v-btn>
+            >Más</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>

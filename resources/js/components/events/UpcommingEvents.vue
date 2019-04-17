@@ -2,11 +2,11 @@
   <v-container class="pa-0">
     <v-layout wrap align-center justify-center row fill-height class="mt-0 mb-0">
       <v-flex xs12 md12 lg12 class="pa-2 mb-0">
-        <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Upcoming Events</p>
+        <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Futuros eventos</p>
         <p
           class="google-font mt-0 mb-0"
           style="font-size:120%"
-        >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
+        >Nuestros eventos estan abiertos a principiantes, desarrolladores, directivos, y organizaciones who que estan interesados en las tecnologias de Google o las usan como parte de sus proyectos.</p>
       </v-flex>
     </v-layout>
 
@@ -58,7 +58,7 @@
               target="_blank"
               class="mb-0 ml-0 mt-0 google-font"
               style="border-radius:7px;text-transform: capitalize;"
-            >See More</v-btn>
+            >Más</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>

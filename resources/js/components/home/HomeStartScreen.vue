@@ -15,8 +15,8 @@
       <v-flex xs12 sm7 md8 lg8 xl8 class>
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:300%">
           <b>
-            Make good things
-            <span style="color: #1a73e8;">together</span>.
+            Hagamos cosas grandes
+            <span style="color: #1a73e8;">juntos</span>.
           </b>
         </p>
         <p class="google-font mt-0" style="font-size:180%">{{chapterDetails.ChapterName}}</p>
@@ -31,7 +31,7 @@
           class="ma-0 google-font elevation-1"
           color="#1a73e8"
           style="text-transform: capitalize;border-radius:5px;color:white"
-        >Become a Member</v-btn>&nbsp;
+        >Unetenos</v-btn>&nbsp;
         <v-btn
           :href="chapterDetails.GDGProgramWebsite"
           target="_blank"
@@ -41,7 +41,7 @@
           outline
           class="ml-0"
           dark
-        >Learn More</v-btn>
+        >Aprenda más</v-btn>
       </v-flex>
     </v-layout>
   </v-container>

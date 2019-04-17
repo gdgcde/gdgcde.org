@@ -6,18 +6,18 @@
   >
     <v-layout wrap align-center justify-center row fill-height>
       <v-flex xs12 md12>
-        <p class="google-font mt-2 mb-0" style="font-size:170%;color:#37474F;">Partners</p>
+        <p class="google-font mt-2 mb-0" style="font-size:170%;color:#37474F;">Patrocinadores</p>
         <p
           class="google-font mt-1 mb-0"
           style="font-size:120%"
-        >A very big thank you to all our partners for their continued partnership.</p>
+        >Un agradecimiento especial a todos nuestros Patrocinadores que confian en nosotros</p>
         <p class="google-font mt-0" style="font-size:120%">
-          If you’re interested in being showcased throughout
-          <b>{{chapterDetails.ChapterName}}</b>, contact
+          Si estas interesado en apoyar la iniciativa
+          <b>{{chapterDetails.ChapterName}}</b>, contactenos
           <a
             style="color:#1565C0;text-decoration: none;"
             :href="`mailto:${chapterDetails.ChapterEmail}`"
-          >{{chapterDetails.ChapterEmail}}</a> to discuss sponsorship opportunities.
+          >{{chapterDetails.ChapterEmail}}</a> para debatir oportunidades de asociación.
         </p>
       </v-flex>
 

@@ -27,8 +27,7 @@
           class="ma-0 google-font elevation-1"
           color="#1a73e8"
           style="text-transform: capitalize;border-radius:5px;color:white"
-        >Become a Member</v-btn>
-&nbsp;
+        >Unetenos</v-btn>&nbsp;
         <v-btn
           href="https://developers.google.com/groups"
           target="_blank"
@@ -37,7 +36,7 @@
           style="text-transform: capitalize;border-radius:5px"
           class="ml-0"
           dark
-        >Learn More</v-btn>
+        >Más</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
