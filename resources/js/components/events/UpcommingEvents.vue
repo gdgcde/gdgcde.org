@@ -118,10 +118,7 @@ export default {
   },
   created() {
     fetch(
-      "https://cors.io/?https://api.meetup.com/" +
-        MeetupAPI.urlname +
-        "/events?key=" +
-        MeetupAPI.apiKey
+      "https://cors.io/?https://api.meetup.com/" + MeetupAPI.urlname + "/events"
     )
       .then(data => data.json())
       .then(res => {
