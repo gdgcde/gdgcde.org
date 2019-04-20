@@ -17,6 +17,11 @@
       "name": "Meetup",
       "link": "https://www.meetup.com/gdgcde/",
       "icon": "fab fa-meetup"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/gdgcde/",
+      "icon": "fab fa-github"
     }
   ],
   "wtmWebsite": "https://www.womentechmakers.com/",
