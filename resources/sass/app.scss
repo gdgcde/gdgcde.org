@@ -1,9 +1,4 @@
 // Fonts
-@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
-@import "https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
-@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons";
-
 @font-face {
   font-family: google-sans;
   src: url(assets/fonts/GoogleSans-Regular.ttf);
@@ -11,3 +6,9 @@
 .google-font {
   font-family: google-sans;
 }
+
+@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons";
+
+@import "../../node_modules/vuetify/dist/vuetify.min.css";

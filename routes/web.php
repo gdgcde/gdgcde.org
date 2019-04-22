@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/eventos/flisol', function () {
-    return view('inicio');
-});
 
 Auth::routes();
 
@@ -32,19 +29,10 @@ Route::get('/menus', 'MenuController@api_menus');
 Route::get('/sliders', 'SliderController@api_slider');
 
 // GDG AURA ROUTES
-Route::get('/', function () { 
-    return view('welcome');
-});
-Route::get('/acerca', function() {
-    return view('about');}
-);
-Route::get('/eventos', function() {
-    return view('events');
-});
-Route::get('/equipo', function() {
-    return view('team');
-});
-Route::get('/contacto', function() {
-    return view('contact');
-});
+Route::get('/', 'HomePageController@index');
+Route::get('/acerca', 'AboutPageController@index');
+Route::get('/eventos', 'EventsPageController@index');
+Route::get('/eventos/flisol', 'EventsPageController@flisol'); // Temp route
+Route::get('/equipo', 'TeamPageController@index');
+Route::get('/contacto', 'ContactPageController@index');
 

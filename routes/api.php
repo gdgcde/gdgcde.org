@@ -13,8 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/menus', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('auth:api')->get('/menus', 'MenuController@api_menu');
 
 //Route::get('menus', 'MenuController@api_menus');

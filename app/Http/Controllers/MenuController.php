@@ -19,10 +19,13 @@ class MenuController extends Controller
     private $pag = 25;
     private $folder = 'menu';
 
+    public function api_menu(Request $request) 
+    {
+        return $request->user();
+    }
+
     public function index(Request $request)
     {
-
-
         $title = $this->module;
         $data = Menu::orderBy('name')->paginate($this->pag);
         $ruta = $this->route;
@@ -103,7 +106,6 @@ class MenuController extends Controller
 
 
     public function api_menus(){
-
         return Menu::where('active', 1)->get();
     }
 }
