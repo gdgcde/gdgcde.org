@@ -36,3 +36,4 @@ Route::get('/eventos/flisol', 'EventsPageController@flisol'); // Temp route
 Route::get('/equipo', 'TeamPageController@index');
 Route::get('/contacto', 'ContactPageController@index');
 
+Route::get('/hola-mundo', 'HolaMundoController@index');
